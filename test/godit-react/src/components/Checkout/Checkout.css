@@ -1,0 +1,13 @@
+.checkout-content {
+    background: #fff;
+    padding: 3%;
+}
+.custom-add-btn {
+margin: 0 5px;
+}
+.subtotal {
+    margin-top: 20px;
+}
+.custom-danger-login {
+    margin-bottom: 20px;
+}

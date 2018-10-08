@@ -29,6 +29,7 @@ import Boradband from './components/Broadband/Broadband';
 import Gas from './components/Gas/Gas';
 import Water from './components/Water/Water';
 import Metro from './components/Metro/Metro';
+import Checkout from './components/Checkout/Checkout';
 
 class App extends Component {
   constructor() {
@@ -84,6 +85,7 @@ class App extends Component {
           <Route path = "/Gas" exact component = {Gas} />
           <Route path = "/Water" exact component = {Water} />
           <Route path = "/Metro" exact component = {Metro} />
+          <Route path = "/Checkout" exact component = {Checkout} />
 
 
           <Redirect to="/notfound" />
