@@ -1,0 +1,14 @@
+.custom-dth-forms-content {
+    background:#fff;
+   padding: 5%;
+   border: solid thin #e1e1e1;
+   margin-top: 20px;
+   box-shadow: 0 0 8px 0 rgba(0,0,0,.05);
+   border-radius: 3px;
+}
+.dth-form-header {
+    margin-bottom: 30px;
+}
+.custom-mobile {
+    margin-bottom: 30px;
+}

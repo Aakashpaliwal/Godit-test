@@ -1,0 +1,45 @@
+.second-navbar {
+    background: #fff;
+    padding-top:15px;
+}
+.godit-login-form {
+    margin-top: 20px;
+}
+.custom-godit-email {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0!important;
+    margin: 30px 0;
+
+}
+.custom-godit-email:focus {
+    border-bottom: solid thin #1B8BBE;
+    transition: all ease 0.5s;
+    box-shadow: none;
+
+}
+.custom-godit-email:active {
+    border-bottom: solid thin #1B8BBE;
+    transition: all ease 0.5s;
+    box-shadow: none;
+}
+.custom-modal-body .nav-tabs {
+    border: none;
+}
+.custom-modal-body ul li .nav-link{
+background: #f4f5f6;
+border: none!important;
+padding: 10px 80px;
+color: #495057;
+border-bottom: none!important;
+}
+.custom-modal-body ul li .active {
+    background: #f4f5f6;
+border: none!important;
+padding: 5px 50px;
+
+}
+.custom-godit-sbmt-btn {
+    padding: 10px 20px;
+}

@@ -1,0 +1,9 @@
+.custom-landline-forms-content
+{
+    padding: 5%;
+    border: solid thin #e1e1e1;
+    background: #fff;
+    margin-top: 20px;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,.05);
+    border-radius: 3px;
+}

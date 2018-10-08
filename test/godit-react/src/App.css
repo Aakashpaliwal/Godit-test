@@ -1,0 +1,57 @@
+@import 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
+
+/* body {
+  background:#f0f4f5;
+  min-height: 100vh; 
+} */
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+body {
+  background: #f0f4f5;
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+.App {
+  text-align: center;
+}
+.flex-grow {
+   flex: 1;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.custom-upper-social  ul li{
+  margin: 0 20px;
+}
+
+.custom-forms-content {
+  margin-bottom: 30px;
+}

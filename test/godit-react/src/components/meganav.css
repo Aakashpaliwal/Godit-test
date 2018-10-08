@@ -1,0 +1,30 @@
+.third-navbar {
+    background: #1B8BBE;
+    /* padding-top: 15px; */
+}
+.third-navbar ul li a {color: #fff;text-decoration: none;text-align: center;}
+.custom-mega-menu ul li {
+    margin: 0 80px;
+    /* text-transform: uppercase; */
+    font-weight: bold;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    
+}
+.custom-mega-menu ul {
+    margin-bottom: 0!important; 
+}
+.custom-mega-menu ul li .fa {color: #fff;text-align: center;}
+.custom-icon-margin { 
+    margin-left: 0px;
+}
+.custom-icon-margin2 {
+    margin-left: 0px;
+}
+.custom-icon-margin3 {
+    margin-left: 0px;
+}
+.custom-icon-margin4 {
+    margin-left: 0px;
+}
