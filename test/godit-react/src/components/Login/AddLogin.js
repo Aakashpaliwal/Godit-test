@@ -14,7 +14,16 @@ class AddLogin extends Component {
 			redirect: false
 			  
 		}	
-		
+		this.handleInputChange = this.handleInputChange.bind(this);
+	}
+	handleInputChange(e){
+		const target = e.target;
+		const value = target.value;
+		const name = target.name;
+	
+		this.setState({
+		  [name]: value
+		});
 	}
 	change = e => 
 	{
@@ -22,7 +31,7 @@ class AddLogin extends Component {
 		 [e.target.name] : e.target.value
 	 })
 	}
-	onSubmit = e =>
+	onSubmit(e)
 	{
 		e.preventDefault();
 		this.setState({
@@ -41,11 +50,15 @@ class AddLogin extends Component {
 		  .then(response => response.json())
 		  .then(json => {
 			   if(json.success === true){
-				this.props.onRouteChange('home');
+				this.props.history.push('/');
 				}else{
 					console.log(json);
 				}
-		})
+			})
+		// .then(response =>  {
+		// 	this.props.history.push('/Checkout');
+		//   }).catch(err => console.log(err));
+		
 		
 	}
     render() {
@@ -60,12 +73,12 @@ class AddLogin extends Component {
 					<div class="card fat custom-card-margin">
 						<div class="card-body">
 							<h4 class="card-title">Login</h4>
-							<form method="POST">
+							<form method="POST" onSubmit = {this.onSubmit.bind(this)}>
 							 
 								<div class="form-group">
 									<label for="email">E-Mail Address</label>
 
-									<input id="email" type="email" class="form-control" name="adminname" value={this.state.adminname} onChange={e => this.change(e)} required autofocus />
+									<input id="email" type="text" class="form-control" name="adminname" value={this.state.adminname} onChange={this.handleInputChange} required autofocus />
 								</div>
 
 								<div class="form-group">
@@ -74,17 +87,17 @@ class AddLogin extends Component {
 											Forgot Password?
 										</a>
 									</label>
-									<input id="password" type="password" class="form-control" name="password" value={this.state.password} onChange={e => this.change(e)} required data-eye />
+									<input id="password" type="password" class="form-control" name="password" value={this.state.password} onChange={this.handleInputChange} required data-eye />
 								</div>
 
 								<div class="form-group">
 									<label>
-										<input type="checkbox" name="user_remember" value={this.state.user_remember} onchange={e => this.change(e)}/> Remember Me
+										<input type="checkbox" name="user_remember" value={this.state.user_remember} onChange={this.handleInputChange}/> Remember Me
 									</label>
 								</div>
 
 								<div class="form-group no-margin">
-									<button class="btn btn-primary btn-block" onClick = {e => this.onSubmit(e)} >
+									<button class="btn btn-primary btn-block" type="submit">
 										Login
 									</button>
 								</div>

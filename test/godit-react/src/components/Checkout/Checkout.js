@@ -64,7 +64,7 @@ class Checkout extends Component {
                                 <hr />
                                 <div className="row">
                                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                        <button type="button" className="btn btn-danger custom-danger-login form-control">Login To Proccedd</button>
+                                       <Link to ="/AddLogin"> <button type="button" className="btn btn-danger custom-danger-login form-control">Login To Proccedd</button></Link>
                                         <p className="text-center"><strong>Continue Shopping ></strong></p>
                                     </div>
 

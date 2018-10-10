@@ -13,7 +13,7 @@ import MidNavBar from "./components/midnavbar";
 import MegaMenu from "./components/megamenu";
 import Footer from "./components/Footer";
 import Signup from  "./components/Signup";
-// import AddLogin from "./components/Login/AddLogin";
+import AddLogin from "./components/Login/AddLogin";
 import Register from "./components/Login/Register";
 import Signin from './components/Login/AddLogin';
 import Mobile from "./components/Mobile/Mobile";
@@ -56,10 +56,10 @@ class App extends Component {
       <div>
         <NavBar />
         {/* <MidNavBar /> */}
-        <MidNavBar isSignedIn={isSignedIn} onRouteChange={this.onRouteChange} />
+        {/* <MidNavBar isSignedIn={isSignedIn} onRouteChange={this.onRouteChange} />
         { route === 'home'
-        ?
-        <div>
+        ? */}
+        {/* <div> */}
         <MegaMenu />
         <div className="content">
           <Switch>
@@ -70,7 +70,7 @@ class App extends Component {
           <Route path="/notfound" component={NotFound}/>
           <Route path="/" exact component={Home}/>
           <Route path ="/Signup" exact component={Signup} />
-          {/* <Route path ="/AddLogin" exact component = {AddLogin} /> */}
+          <Route path ="/AddLogin" exact component = {AddLogin} />
           <Route path ="/Register" exact component = {Register} />
           <Route path = "/Mobile" exact component = {Mobile} />
           <Route path = "/Dth" exact component = {Dth} />
@@ -91,14 +91,14 @@ class App extends Component {
           <Redirect to="/notfound" />
           </Switch>
         </div>
-        </div>
+        {/* </div>
         : (
              route === 'signin'
              ? <Signin  onRouteChange={this.onRouteChange}/>
              : <Register onRouteChange={this.onRouteChange}/>
             )
         }
-     
+      */}
         <Footer />
       </div>
     );
