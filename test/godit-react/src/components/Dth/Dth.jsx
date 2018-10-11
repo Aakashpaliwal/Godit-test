@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './Dth.css';
 import '../Mobile.css';
+import {Link} from 'react-router-dom';
 
 export class Dth extends Component {
     state = {
@@ -58,7 +59,7 @@ export class Dth extends Component {
          </div>
 
        </div>
-       <button className="btn btn-info" onClick={e => this.onSubmit(e)}>Proceed</button>
+       <Link to ="/Checkout"><button className="btn btn-info">Proceed</button></Link>
       
     
     

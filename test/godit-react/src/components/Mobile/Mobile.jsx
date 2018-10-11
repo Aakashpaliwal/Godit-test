@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './Mobile.css';
-
+import {Link} from 'react-router-dom';
 export class Mobile extends Component {
     state = {
         mobilenumber: "",
@@ -82,7 +82,7 @@ export class Mobile extends Component {
             value = {this.state.amount}
              onChange = {e => this.change(e)}/>
          </div>
-         <button className="btn btn-success" onClick={e => this.onSubmit(e)}>Procced</button>
+         <Link to ="Checkout"><button className="btn btn-success">Procced</button></Link>
          </div>
     </div>
     </div>

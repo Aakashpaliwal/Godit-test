@@ -17,7 +17,7 @@ const MegaMenu = () => {
     <div className="custom-mega-menu" id="navbarSupportedContent">
     <ul class = "list-inline">
     <li class="list-inline-item">
-      <Link to ="/Mobile">    <i class="fa fa-mobile fa-2x custom-icon-margin" aria-hidden="true"></i>
+      <Link to ="/">    <i class="fa fa-mobile fa-2x custom-icon-margin" aria-hidden="true"></i>
                     <br /> 
                  Mobile </Link>
         </li>

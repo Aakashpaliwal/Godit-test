@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-
+import "./Metro.css";
+import{Link} from 'react-router-dom';
 class Metro extends Component {
     state = {
         metro_amount : ""
@@ -40,7 +41,7 @@ class Metro extends Component {
               onChange = {e => this.change(e)}/>
           </div>
         </div>
-        <button className="btn btn-info" onClick={e => this.onSubmit(e)}>Proceed</button>
+        <Link to ="/Checkout"><button className="btn btn-info">Proceed</button></Link>
        
      
      

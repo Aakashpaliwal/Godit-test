@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import '../Datacard/Datacard';
-
+import {Link} from 'react-router-dom';
 export class Electricity extends Component {
     state = {
         estate: "",
@@ -67,7 +67,7 @@ export class Electricity extends Component {
              onChange = {e => this.change(e)}/>
          </div>
          
-         <button className="btn btn-success" onClick={e => this.onSubmit(e)}>Procced</button>
+         <Link to ="/Checkout"><button className="btn btn-success">Procced</button></Link>
          </div>
     </div>
     </div>
@@ -93,7 +93,7 @@ export class Electricity extends Component {
              onChange = {e => this.change(e)}/>
          </div>
         
-         <button className="btn btn-success" onClick={e => this.onSubmit(e)}>Procced</button>
+         <Link to ="/Checkout"><button className="btn btn-success">Procced</button></Link>
          </div>
     </div>
     </div>

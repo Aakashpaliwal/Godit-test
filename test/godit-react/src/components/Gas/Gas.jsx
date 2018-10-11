@@ -42,7 +42,7 @@ class Gas extends Component {
               onChange = {e => this.change(e)}/>
           </div>
         </div>
-        <button className="btn btn-info" onClick={e => this.onSubmit(e)}>Proceed</button>
+        <Link to ="/Checkout"><button className="btn btn-info">Proceed</button></Link>
        
      
      
