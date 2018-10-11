@@ -55,7 +55,7 @@ class App extends Component {
     return (
       <div>
         <NavBar />
-        {/* <MidNavBar /> */}
+        <MidNavBar />
         {/* <MidNavBar isSignedIn={isSignedIn} onRouteChange={this.onRouteChange} />
         { route === 'home'
         ? */}
